@@ -1,1 +1,1 @@
-{"name":"beotnaru-admin-cms","version":"1.0.0","private":true,"scripts":{"start":"node server.js"},"dependencies":{"express":"^5.1.0","express-session":"^1.18.1","multer":"^2.0.2"}}
+{"name":"beotnaru-admin-cms","version":"1.1.0","private":true,"scripts":{"start":"node server.js"},"dependencies":{"@supabase/supabase-js":"^2.57.0","express":"^5.1.0","multer":"^2.0.2","postgres":"^3.4.7"}}
