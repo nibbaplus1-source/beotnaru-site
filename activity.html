@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>활동 현황 | 벗나루 청춘태권도</title>
+<meta name="description" content="2025년 3월부터 서울 노원구·중구·성동구 다섯 곳에서 진행 중인 수업 현황과 활동 사진입니다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div id="siteHeader"></div>
+
+<main>
+
+<section class="sub">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">홈</a> · 활동 현황</div>
+    <h1>2025년 3월부터<br>다섯 곳에서 이어오고 있습니다</h1>
+    <p>서울 노원구·중구·성동구의 복지관과 시설에서 정기 수업을 운영하고 있습니다.</p>
+  </div>
+</section>
+
+<section class="blk">
+  <div class="wrap">
+    <div class="head"><h2>운영 기관</h2></div>
+    <table class="sites">
+      <thead><tr><th>기관</th><th>지역</th><th>시작</th><th>운영 상태</th></tr></thead>
+      <tbody id="siteRows"></tbody>
+    </table>
+    <p class="small" style="margin-top:18px">금빛호수 옥수관은 직접 운영하는 도장입니다. 복지관 협력 사업과 구분해 표기했습니다.</p>
+  </div>
+</section>
+
+<section class="blk soft">
+  <div class="wrap">
+    <div class="head"><h2>걸어온 길</h2></div>
+    <ul class="history" id="historyList"></ul>
+  </div>
+</section>
+
+<section class="blk">
+  <div class="wrap">
+    <div class="head"><h2>활동 현장</h2><p>실제 수업 모습입니다.</p></div>
+    <div class="grid even" id="photoGrid"></div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>기관 협력을 검토 중이신가요</h2>
+    <p>진행 중인 수업 참관과 운영 조건 안내를 도와드립니다.</p>
+    <a class="pill" href="contact.html">협력 문의하기</a>
+  </div>
+</section>
+
+</main>
+
+<div id="siteFooter"></div>
+<script src="assets/site.js"></script>
+<script>
+  initPage("activity");
+  renderSites("siteRows");
+  renderHistory("historyList");
+  renderPhotos("photoGrid", { even:true });
+</script>
+</body>
+</html>
